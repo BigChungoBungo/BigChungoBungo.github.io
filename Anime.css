@@ -1,0 +1,164 @@
+body { 
+  background-color: rgb(63,71,204); 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article ad"
+    "footer footer footer";
+  grid-template-rows: 60px 1fr 60px;
+  grid-template-columns: 20% 1fr 15%;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+  }
+#MainpageHeader {
+  grid-area: header;
+}
+#MainpageFooter {
+  grid-area: footer;
+}
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+header, footer{
+  padding: 20px;
+  background: rgb(64,64,64);
+}
+article {
+  background: rgb(64,64,64);
+  width: 1000px;
+  padding: 20px;
+}
+#SiteNav{
+ 	padding: 20px;
+    background: rgb(64,64,64);
+	position: absolute;
+}
+h1 {
+	padding: 5px;
+	background:  rgb(204,0,0);
+	width: 187px;
+	color: Black;
+	text-align: middle;
+	font: url("FuturaDisplayBQ.otf");
+}
+li {
+	 border-right: 1px solid #bbb;
+	  float: left;
+}
+li a {
+    display: block;
+	text-decoration: underline;
+	text-decoration-style: black;
+    color: Black;
+	 display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+    background-color: rgb(204,0,0);
+    color: white;
+}
+h3 {
+	text-shadow: 1px 1px rgb(204,0,0);
+}
+#AnimeBody{
+	background-color: rgb(204,0,0); 
+}
+#AnimeNav {
+	padding: 20px;
+    background: rgb(64,64,64);
+	position: absolute;
+	left: 550px;
+	top: 100px;
+    width: 187px;
+    height: 435px;
+}
+#AnimeUL {
+	left: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 187px;
+	 position: fixed;
+	top: 0;
+	width: 100%;
+	}
+#AnimeUL {
+	display: inline;
+	text-decoration: underline;
+	text-decoration-style: white;
+    color: White;
+    padding: 8px 50px;
+    text-decoration: none;
+	 list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+form {
+  border: 3px solid rgb(64,64,64);
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(64,64,64);
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: rgb(64,64,64);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: rgb(64,64,64);
+}
+/* Add padding to containers */
+.container {
+  padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
